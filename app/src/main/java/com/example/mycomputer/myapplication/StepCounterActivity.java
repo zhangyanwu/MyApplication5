@@ -179,7 +179,6 @@ public class StepCounterActivity extends Activity {
 		tv_distance.setText(formatDouble(0.0));
 		tv_calories.setText(formatDouble(0.0));
 		tv_velocity.setText(formatDouble(0.0));
-
 		handler.removeCallbacks(thread);
 
 	}
@@ -311,11 +310,7 @@ public class StepCounterActivity extends Activity {
 
 
 	private void countDistance() {
-		if (StepDetector.CURRENT_SETP % 2 == 0) {
-			distance = (StepDetector.CURRENT_SETP / 2) * 3 * step_length * 0.01;
-		} else {
-			distance = ((StepDetector.CURRENT_SETP / 2) * 3 + 1) * step_length * 0.01;
-		}
+			distance = (StepDetector.CURRENT_SETP ) * step_length * 0.01;
 	}
 
 

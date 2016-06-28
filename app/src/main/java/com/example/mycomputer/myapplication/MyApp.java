@@ -1,6 +1,7 @@
 package com.example.mycomputer.myapplication;
 
 import android.app.Application;
+import android.content.Intent;
 
 import com.baidu.mapapi.SDKInitializer;
 
